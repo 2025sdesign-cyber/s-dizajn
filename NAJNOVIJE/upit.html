@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upit za sastanak | S-Dizajn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="ELEMENTI/LOGOTIPI/2.png">
+</head>
+<body style="background-color: #1a1a1a;">
+    <header class="header">
+        <a href="index.html" class="logoIMG"><img src="ELEMENTI/LOGOTIPI/2.png" alt="Logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Galerija</a>
+            <a href="shop.html">Shop</a>
+            <a href="upit.html" style="text-decoration: underline;">Upit</a>
+        </nav>
+    </header>
+
+    <section id="booking" class="booking" style="margin-top: 150px;" >
+        <div class="container">
+            <h2>Upit za termin sastanka</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" id="booking-form">
+                <input type="hidden" name="access_key" value="d550e835-6609-475f-882a-d5277bd37cb0">
+                <div class="form-group">
+                    <label for="name">Ime i Prezime</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Datum</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Vrijeme</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <select name="Usluga">
+                        <option>Izrada web stranice (Osnovni paket)</option>
+                        <option>Izrada web stranice (Pro paket)</option>
+                        <option>Web aplikacija</option>
+                        <option>SEO Optimizacija</option>
+                        <option>Mjesečno održavanje</option>
+                        <option>WordPress predložak (Premium)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Dodatne Napomene</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit">Pošalji Upit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 S-Dizajn. Sva prava zadržana.</p>
+        </div>
+    </footer>
+</body>
+</html>
